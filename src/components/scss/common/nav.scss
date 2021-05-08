@@ -1,0 +1,44 @@
+@import "scss/mixin";
+.normal-nav{
+  height: 100%;
+  overflow: hidden;
+  i{
+    color: #3a8ee6;
+  }
+}
+.fewNav{
+  .nav-ul{
+    flex-direction: column-reverse;
+  }
+}
+.underline{
+  position: absolute;
+  bottom: 1px;
+  height: 1px;
+  width: 100px;
+  background-color: #3a8ee6;
+  transition: right .3s ease-in-out,opacity .3s ease-in-out;
+}
+.nav-ul{
+  display: inline-flex;
+  height: 100%;
+}
+.nav-li{
+  width: 100px;
+  padding: 0 10px;
+  list-style: none;
+  height: 100%;
+
+  a{
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    @include colorOne;
+    transition: color .2s ease;
+  }
+  .active,.active:hover,.active:active{
+    color: #e87a90;
+  }
+}

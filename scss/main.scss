@@ -1,0 +1,11 @@
+.v-main{
+  height: 100%;
+  display: grid;
+
+  grid-template-rows: 80px auto;
+}
+
+.container{
+  overflow-x: hidden;
+  overflow-y: auto;
+}

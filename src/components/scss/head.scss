@@ -1,0 +1,36 @@
+@import "scss/mixin";
+.m-header{
+  position: relative;
+  background: #b9d3ee;
+}
+.m-head{
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.head-nav,.head-menu{
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.head-menu{
+  padding: 0 20px;
+  button{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    transition: color .1s;
+    font-weight: 500;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    padding: 0 10px;
+    @include colorOne;
+  }
+  i{
+    font-size: 40px;
+  }
+}

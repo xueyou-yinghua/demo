@@ -1,0 +1,9 @@
+@mixin colorOne(){
+  color: #f4a7b9;
+  &:hover{
+    color: #e87a90;
+  }
+  &:active{
+    color: #db4d6d;
+  }
+}
