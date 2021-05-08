@@ -1,0 +1,52 @@
+.carousel{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container{
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  @media screen and (max-width: 1200px){
+    width: 100%;
+  }
+  background: #8cc5ff;
+}
+
+
+
+
+.carousel-btn{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  border-radius: 50%;
+}
+.carousel-left{
+  left: 30px;
+}
+.carousel-right{
+  right: 30px;
+}
+
+.left-enter-active,.left-leave-active,
+.right-enter-active,.right-leave-active
+{
+  transition: all 0.3s ease-out;
+}
+
+.left-enter-from,
+.left-leave-to{
+  transform: translateX(20px);
+  opacity: 0;
+}
+.right-enter-from,
+.right-leave-to{
+  transform: translateX(-20px);
+  opacity: 0;
+}
